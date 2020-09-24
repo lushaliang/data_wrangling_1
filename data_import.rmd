@@ -46,4 +46,23 @@ pulse_df = read_sas("./data/public_pulse_data.sas7bdat")
 pulse_df
 ```
 
+## Comparison with base R
+
+Why not read.csv?
+
+```{r}
+litters_base = read.csv("./data/FAS_litters.csv")
+litters_readr = read_csv("./data/FAS_Litters.csv")
+
+litters_base
+litters_readr
+```
+
+## Exporting data
+
+Export the mlb sub table
+```{r}
+write_csv(mlb_df, "./data/mlb_subtable.csv")
+```
+
 
